@@ -136,7 +136,7 @@ ol > li > ul {
 ol > li > ul > li:hover {
     background-color: gray;
 } 
-ol > li:focus > ul {
+ol > li:focus-within > ul {
 display:block;
 transition: 0.5s;
 }
