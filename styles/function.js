@@ -72,6 +72,22 @@ function kwadratowa() {
             document.getElementById("kwadratowa-wynik").innerHTML = "&Delta; = "+ delta + "<br> Brak miejsc zerowych";
         };
     };
+    if (x!= null && y!= null && z!=null) {
+        delta = Math.pow(y, 2)-(4*x*z);
+        document.getElementById("kwadratowa-wynik").innerHTML = "&Delta; = "+ delta;
+        if (delta>0){
+            x1 = (-y-Math.sqrt(delta))/(2*x);
+            x2 = (-y+Math.sqrt(delta))/(2*x);
+            document.getElementById("kwadratowa-wynik").innerHTML = "&Delta; = "+ delta + "<br> x<sub>1</sub>= " + x1 + " x<sub>2</sub>= " + x2 ;
+        };
+        if (delta==0){
+            x1 = (-y)/(2*x);
+            document.getElementById("kwadratowa-wynik").innerHTML = "&Delta; = "+ delta + "<br> x<sub>1</sub>= " + x1;
+        };
+        if (delta<0){
+            document.getElementById("kwadratowa-wynik").innerHTML = "&Delta; = "+ delta + "<br> Brak miejsc zerowych";
+        };
+    };
     
         
     
