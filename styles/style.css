@@ -120,6 +120,7 @@ li:focus {
     font-size: 20px;
     font-weight: 700;
     border: 1px solid black;
+    transition-duration: 1s;
 }
 li:hover {
     font-size: 20px;
