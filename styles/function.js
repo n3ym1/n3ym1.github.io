@@ -4,7 +4,7 @@ function potega () {
     y = document.getElementById("potega-b").value;
     wynik = Math.pow(x, y);
     document.getElementById("potega-wynik").innerHTML = wynik;
-    if (y<=0) {
+    if (y<0) {
         document.getElementById("potega-wynik").style.color = "red";
         document.getElementById("potega-wynik").innerHTML = "Użyj liczby naturalnej!!";
         function wyczysc() {
