@@ -1,269 +1,162 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="styles/calc.js" defer>
-    </script>
-    <script src="styles/function.js" defer>
-    </script>
-    <script src="styles/chowanie.js" defer>
-    </script>
-    <title>Matematyka. To lubię!</title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <title>Showcase Mateusz Ostrowski</title>
 </head>
 <body>
-    <div class="top-row">
-        <div class="nav-top-left">
-            <div id="mobile-nav">
-            <img src="images/menu.png" alt="Przycisk Menu" class="nav-img"/>
-        </div>
-        </div>
-        <header class="header">
-            <h1>Matematyka <img src="images/compasses.png" alt="Cyrkiel" class="nav-img"> To lubię!</h1>
-        </header>
-        <div class="nav-top-right">
-            <div id="nav-calc">
-                <img src="images/calculator.svg" alt="Kalkulator" class="nav-img">
+    <div id="container">
+        <div id="nav">
+            <div id="#technologie" class="menu">
+                <a class="nav" href="#technologie"> Technologie </a>
             </div>
-            <div id="nav-function">
-                <img src="images/function.png" alt="Wzory i funkcje" class="nav-img">
+            <div id="#portfolio"class="menu">
+                <a class="nav" href="#portfolio"> Portfolio </a>
+            </div>
+            <div id="#kontakt"class="menu">
+                <a class="nav" href="#kontakt"> Kontakt </a>
             </div>
         </div>
-    </div>
-    <section class="content">
-        <div class="nav-main">
-            <ol>
-                <li tabindex="9999">Klasa 1
-                    <ul>
-                        <li><a href="#"">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                     </ul>
-                </li>
-                <li  tabindex="9999">Klasa 2
-                    <ul>
-                        <li><a href="#" onclick="noElo()">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Klasa 3
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Klasa 4
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Klasa 5
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Klasa 6
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Klasa 7
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Klasa 8
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Liceum Klasa 1
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Liceum Klasa 2
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Liceum Klasa 3
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-                <li tabindex="9999">Liceum Klasa 4 
-                    <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-        <div class="content-main">
-            <div id="tekst">
-            <p>
-                Witaj na stronie z zadaniami matematycznymi 
-            </p>
-            <p>
-                Po lewej stronie strony znajduje się pasek z klasami,
-                w których znajdują się zadania o różnym
-                poziomie trudności.
-            </p>
-            <p>Po wybraniu zadania, które nas interesuje pojawi się ono  <br>
-                pod tym tekstem. 
-            </p>
-            <p>
-                Powodzenia w nauce :)
-            </p>
-        </div>
-        <div id="task"> Zadanie</div>
-        </div>
-    </section>
-    <div class="calc">
-        Prosty kalkulator. <br />
-        Liczy tylko działania z 2 liczb całkowitych.
-        <div id="screen">
-            <div id="wynik-calc">
-                
-            </div>
-        </div>
-        <div class="calc-btn">
-            <button class="znak" value="C">C</button>
-            <button class="znak" value="/">/</button>
-            <button class="znak" value="X">X</button>
-            <button class="znak" value="+">+</button>
-            <button class="liczba" value="7">7</button>
-            <button class="liczba" value="8">8</button>
-            <button class="liczba" value="9">9</button>
-            <button class="znak" value="-">-</button>
-            <button class="liczba" value="4">4</button>
-            <button class="liczba" value="5">5</button>
-            <button class="liczba" value="6">6</button>
-            <button class="znak" value="=" id="wynik"> =</button>
-            <button class="liczba" value="1">1</button>
-            <button class="liczba" value="2">2</button>
-            <button class="liczba" value="3">3</button>
-            <button disabled></button>
-        </div>
+        <div id="content">
+            <section class="sekcja" id="omnie">
 
+                <div class="podzial2"> 
+                    <div class="omnietekst">
+                        <img id="mateusz" src="img/matthew.png" alt="Ja">
+                    </div>
+                </div>
+                <div class="podzial2 omniex">
+                    <div class="omnietekst">
+                        <h3>O mnie</h3>
+                        <p>
+                        Jestem Mateusz, mam 22 lata. Skończyłem Technikum na kierunku Informatycznym
+                        i interesuje sie programowaniem
+                        stron internetowych w technologiach: HTML, CSS oraz JavaScript. 
+                        Z programowaniem wiążę swoją przyszłość.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="sekcja" id="technologie">
+                <div class="podzial2">
+                    <div>
+                        <h3>Technologie, które używam:</h3>
+                    </div>
+                    <div class="ikona-tekst">
+                        <div>
+                            <img src="img/html.png" height="100px" alt="html5">
+                        </div>
+                    </div>
+                    <div class="ikona-tekst">
+                        <div>
+                            <img src="img/css.png" height="100px" alt="css3">
+                        </div>
+                    </div>
+                    <div class="ikona-tekst">
+                        <div>
+                            <img src="img/js.png" alt="css3">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="podzial2">
+                    <h3>Technologie których chcę się nauczyć:</h3>
+                    <div class="ikona-tekst">
+                        <div>
+                            <img src="img/react.png" height="100px" alt="css3">
+                        </div>
+                    </div>
+                   
+                    <div class="ikona-tekst">
+                        <div>
+                            <img src="img/ts.png" height="100px" alt="css3">
+                        </div>
+                    </div>
+                    <div class="ikona-tekst">
+                        <div>
+                            <img src="img/node.png" height="80px" alt="css3">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="sekcja" id="portfolio">
+                <div id="tekst">
+                    <h2 style="font-size: 40px;">Portfolio</h2>
+                    <p style="font-size: 23px;">Lista projektów, nad którymi pracowałem, bądź aktualnie pracuję. <br></p>
+                    
+                </div>
+                <div id="kafelki">
+                    <a class="tekstkafelek" href="https://www.quaresse.de" target="_blank">
+                    <div class="kafelek" id="quaresse">
+                        <div id="tekstt">
+                            <h3>Quaresse.de</h3>
+                            <p>
+                            Stworzenie od podstaw strony w języku niemieckim na 
+                            wzór polsko języcznej strony przy użyciu DIVI Builder dla LTB SP. Z O.O.
+                            </p>
+                        </div>
+                    </div>
+                    </a>
+                    <a class="tekstkafelek" href="https://n3ym1.github.io/#" target="_blank">
+                    <div class="kafelek" id="matematyka">
+                        <div id="tekstt">
+                            <h3>Matematyka. To Lubię!</h3>
+                            <p>
+                                Moja własna strona, którą pisałem,
+                                aby nabyć umiejętności w programowaniu. Jest ona napisana z wykorzystaniem JavaScript.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                    <div class="kafelek hidden">
+                       
+                    </div>
+                    <div class="kafelek hidden">
+                                           
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="sekcja" id="kontakt">
+                <div id="kontaktuklad">
+                <h2>Kontakt</h2>
+                <p>
+                    Aby się ze mną skontaktować w sprawie zatrudnienia możesz wysłać 
+                    wiadomość e-mail albo wysłać wiadomość 
+                    poprzez LinkedIn.
+                </p>
+                <p>
+                    Te opcje znajdują się poniżej:
+                </p>
+                <div id="uklad">
+                <div id="mail">
+                    <div id="logo-mail">
+                        
+                        <a href="mailto:mateusz.ryszard.ostrowski@gmail.com"><img src="/img/mail.png" class="kontaktikona"  height="85px" alt="mail"></a>
+                    </div>
+                    <div class="kontakt-nazwa">
+                        
+                    </div>
+                </div>
+                <div id="linkedin">
+                    <div id="logo-linkedin">
+                        <a href="https://www.linkedin.com/in/mateusz-ostrowski-044165227/" target="_blank"><img src="/img/linkedin.png" class="kontaktikona" height="80px" alt="linkedin"></a>
+                    </div>
+                    <div class="kontakt-nazwa">
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>
+        </div>
+        <footer>
+            Strona stworzona przez Mateusz Ostrowski &copy;
+        </footer>
     </div>
-    <div class="funkcje">
-        <div id="funkcje-tekst">
-            Tu obliczysz funkcje kwadratową, wzory skróconego mnożenia, potęgi oraz pierwiastki
-        </div>
-        <div class="dzialania">
-            Funkcja kwadratowa (postać ogólna)<br />
-            <input type="number" id="kwadratowa-a" placeholder="a" step="1"> 
-            <input type="number" id="kwadratowa-b" placeholder="b" step="1">
-            <input type="number" id="kwadratowa-c" placeholder="c" step="1">
-            <button onclick="kwadratowa();">Oblicz</button> <br>
-            Wynik funkcji kwadratowej:
-            <div id="kwadratowa-wynik"></div>
-        </div>
-        <div class="dzialania">
-            Wzory skróconego mnożenia <br />
-            <input type="radio" name="wzor" id="radio1"> (a+b)<sup>2</sup>
-            <input type="radio" name="wzor" id="radio2"> (a-b)<sup>2</sup>
-            <input type="radio" name="wzor" id="radio3"> a<sup>2</sup>-b<sup>2</sup> <br>
-            <input type="number" id="skrocone-a"  placeholder="a" step="1">
-            <input type="number" id="skrocone-b"  placeholder="b" step="1">
-            <button onclick="skrocone();">Oblicz</button> <br>
-            Wynik funkcji kwadratowej:
-            <div id="skrocony-wynik"></div>
-        </div>
-        <div class="dzialania">
-            Potęga n-tego stopnia <br />
-           <input type="number" id="potega-a" placeholder="a"> <input type="number" id="potega-b" placeholder="n" min="0">
-            <button onclick="potega();">Oblicz</button> <br>
-            Wynik potęgi:
-            <div id="potega-wynik"></div>
-        </div>
-        <div class="dzialania">
-            Pierwiastek n-tego stopnia <br />
-                <input type="number" id="pierwiastek-a" placeholder="a" step="1"> <input type="number" id="pierwiastek-b"  placeholder="n" step="1">
-                <button onclick="pierwiastek();">Oblicz</button> <br>
-                Wynik pierwiastka:
-            <div id="pierwiastek-wynik"></div>
-        </div>
-    </div>
-    <script>
-        var tasks = [
-    { grade: "1", task: "Oblicz pole trójkąta o podstawie 3 i wysokości 4." },
-    { grade: "2", task: "Oblicz iloraz dwóch liczb: 15 i 3." },
-    { grade: "3", task: "Oblicz pole koła o promieniu 5." },
-    { grade: "4", task: "Oblicz iloczyn dwóch liczb: 8 i 6." },
-    { grade: "5", task: "Oblicz pierwiastek trzeciego stopnia z liczby 27." },
-    { grade: "6", task: "Oblicz pochodną funkcji y = x^2 + 3x + 2." },
-    { grade: "7", task: "Oblicz pole prostokąta o bokach 5 i 7." },
-    { grade: "8", task: "Oblicz pochodną funkcji y = 3x^3 + 2x^2 + x + 1." },
-    { grade: "9", task: "Oblicz całkę oznaczoną funkcji y = 2x^2 + 3x + 1 od granicy a = 2 do granicy b = 5." },
-    { grade: "10", task: "Oblicz pochodną funkcji y = x^3 - 2x + 1." },
-    { grade: "11", task: "Oblicz całkę nieoznaczoną funkcji y = x^2 + 2x + 3." },
-    { grade: "12", task: "Oblicz pole trapezu o podstawach 3 i 5 oraz wysokości 4." },
-  ];
-  
-  // funkcja wyświetlająca zadanie
-  document.getElementById("task").addEventListener("click",noElo);
-  function noElo (){
-    document.getElementById("task").innerHTML = "No elo";
-  }
-  function displayTask(grade) {
-    // przeglądamy tablicę z zadaniami i wyświetlamy odpowiednie zadanie
-    for (var i = 0; i < tasks.length; i++) {
-      if (tasks[i].grade == grade) {
-        document.getElementById("task").innerHTML = tasks[i].task;
-        return;
-      }
-    }
-    // jeśli nie znaleziono zadania, wyświetlamy komunikat o błędzie
-    document.getElementById("task").addEventListener("click").innerHTML = "Nie znaleziono zadania dla tej klasy.";
-    console.log("czemu nie działa?");
-  }
-    </script>
 </body>
 </html>

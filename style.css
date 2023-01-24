@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    padding: 0;
+    margin: 0;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row;
+    color: blue;
+    background-color: #042940;
+}
+a.nav {
+    text-decoration: none;
+    color: #9FC131;
+    font-size: 3vh;
+}
+a.nav:hover {
+    background-color: #9FC131;
+    color: #042940;
+    padding: 2vh;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.menu {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: block;
+}
+.sekcja {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.podzial2 {
+    text-align: center;
+    width: 45vh;
+    height: auto;
+
+
+
+}
+footer {
+    text-align: center;
+}
+#portfolio {
+    flex-direction: column;
+   
+    text-align: center;
+}
+#kafelki {
+    display: flex;
+    justify-content: space-evenly;
+    color: #042940;
+    flex-wrap:wrap;
+    margin-bottom: 1vh;
+}
+.kafelek {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 25vh;
+    height: 25vh;
+    align-items: center;
+    background-color: #9FC131;
+    margin-top: 1vh;
+    
+}
+#tekstt {
+    margin: 4.5vh;;
+}
+.hidden {
+    display: none;
+}
+.ikona-tekst {
+
+
+}
+img {
+    vertical-align: super;
+}
+#omnie {
+    background-color: antiquewhite;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/wall.png);
+  
+}
+#technologie {
+    display: flex;
+    background-color: #D6D58E;
+    align-items: center;
+    height: 50vh;
+}
+#portfolio {
+    background-color: #042940;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/port.jpg);
+    color: #9FC131;
+}
+#kontakt {
+    background-color: lightsalmon;
+    height: 45vh;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    height: 5vh;
+    background-color: #042940;
+    color: #9FC131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.omnietekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #042940;
+    height: 44vh;
+    font-size: 2vh;
+    border: 5px solid #9FC131;
+    color: #9FC131;
+    text-align: center;
+    align-items: center;
+
+}
+a.tekstkafelek {
+    color: black;
+    font-size: 1.5vh;
+    text-decoration: none;
+}
+a.tekstkafelek:hover {
+    text-decoration: none;
+}
+#uklad {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 45vw;
+    height: auto;
+    align-items: center;
+}
+h3 {
+    margin: 0;
+    padding: 2vh;
+}
+#zdjecie {
+    background-color: #042940;
+    border: 0.2vh solid #9FC131;
+    margin: 0;
+    padding: 0;
+}
+#mateusz {
+    height: 100%;
+}
+#kontakt.sekcja p {
+    width: 50vh;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  #kontaktuklad {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+  img {
+    height: 9vh;
+  }
+  img.kontaktikona {
+    height: 6vh;
+  }
+  #kontakt.sekcja p {
+    width: auto;
+    font-size: 2vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    
+  }
+  @media only screen and (max-width: 1000px) {
+    #omnie.sekcja {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #mateusz {
+        height: 40vh;
+    }
+    .omnietekst {
+        height: auto;
+        width: 40vh;
+    }
+    .podzial2 {
+        width: 40vh;;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    a.nav {
+        text-decoration: none;
+        color: #9FC131;
+        font-size: 2vh;
+    }
+    #omnie.sekcja {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #mateusz {
+        height: 30vh;
+    }
+    .omnietekst {
+        height: auto;
+        width: 30vh;
+        
+    }
+    .podzial2 {
+        width: 30vh;
+    }
+  }
+
+
+  @media only screen and (max-width: 360px) {
+    #kontakt.sekcja p {
+        width: auto;
+        font-size: 2vh;
+        margin-left: 4vh;
+        margin-right: 4vh;
+        
+      }
+      #omnie.sekcja {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #mateusz {
+        height: 20vh;
+    }
+    .omnietekst {
+        height: auto;
+        width: 20vh;
+        
+    }
+    .podzial2 {
+        width: 20vh;
+    }
+  }
