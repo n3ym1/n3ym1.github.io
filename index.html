@@ -36,7 +36,7 @@
             <ol>
                 <li tabindex="9999">Klasa 1
                     <ul>
-                        <li><a href="strona.html" target="_blank">Zadanie 1</a></li>
+                        <li><a href="#"">Zadanie 1</a></li>
                         <li><a href="#">Zadanie 2</a></li>
                         <li><a href="#">Zadanie 3</a></li>
                         <li><a href="#">Zadanie 4</a></li>
@@ -45,7 +45,7 @@
                 </li>
                 <li  tabindex="9999">Klasa 2
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
+                        <li><a href="#" onclick="noElo()">Zadanie 1</a></li>
                         <li><a href="#">Zadanie 2</a></li>
                         <li><a href="#">Zadanie 3</a></li>
                         <li><a href="#">Zadanie 4</a></li>
@@ -145,11 +145,23 @@
             </ol>
         </div>
         <div class="content-main">
+            <div id="tekst">
             <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vero necessitatibus quibusdam tempora nisi. Doloribus praesentium quaerat eum suscipit perspiciatis cumque laborum magnam commodi quos, consectetur nesciunt dolore quo ut!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui iusto quaerat dolore ratione consequatur id minima error autem quidem perferendis quo sequi, veniam sapiente hic perspiciatis quibusdam mollitia illum incidunt?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero ab et nostrum dicta, commodi itaque molestias voluptas eius dolorem nobis amet cum reiciendis recusandae eligendi quibusdam delectus quam? Delectus.
+                Witaj na stronie z zadaniami matematycznymi 
             </p>
+            <p>
+                Po lewej stronie strony znajduje się pasek z klasami,
+                w których znajdują się zadania o różnym
+                poziomie trudności.
+            </p>
+            <p>Po wybraniu zadania, które nas interesuje pojawi się ono  <br>
+                pod tym tekstem. 
+            </p>
+            <p>
+                Powodzenia w nauce :)
+            </p>
+        </div>
+        <div id="task"> Zadanie</div>
         </div>
     </section>
     <div class="calc">
@@ -219,5 +231,39 @@
             <div id="pierwiastek-wynik"></div>
         </div>
     </div>
+    <script>
+        var tasks = [
+    { grade: "1", task: "Oblicz pole trójkąta o podstawie 3 i wysokości 4." },
+    { grade: "2", task: "Oblicz iloraz dwóch liczb: 15 i 3." },
+    { grade: "3", task: "Oblicz pole koła o promieniu 5." },
+    { grade: "4", task: "Oblicz iloczyn dwóch liczb: 8 i 6." },
+    { grade: "5", task: "Oblicz pierwiastek trzeciego stopnia z liczby 27." },
+    { grade: "6", task: "Oblicz pochodną funkcji y = x^2 + 3x + 2." },
+    { grade: "7", task: "Oblicz pole prostokąta o bokach 5 i 7." },
+    { grade: "8", task: "Oblicz pochodną funkcji y = 3x^3 + 2x^2 + x + 1." },
+    { grade: "9", task: "Oblicz całkę oznaczoną funkcji y = 2x^2 + 3x + 1 od granicy a = 2 do granicy b = 5." },
+    { grade: "10", task: "Oblicz pochodną funkcji y = x^3 - 2x + 1." },
+    { grade: "11", task: "Oblicz całkę nieoznaczoną funkcji y = x^2 + 2x + 3." },
+    { grade: "12", task: "Oblicz pole trapezu o podstawach 3 i 5 oraz wysokości 4." },
+  ];
+  
+  // funkcja wyświetlająca zadanie
+  document.getElementById("task").addEventListener("click",noElo);
+  function noElo (){
+    document.getElementById("task").innerHTML = "No elo";
+  }
+  function displayTask(grade) {
+    // przeglądamy tablicę z zadaniami i wyświetlamy odpowiednie zadanie
+    for (var i = 0; i < tasks.length; i++) {
+      if (tasks[i].grade == grade) {
+        document.getElementById("task").innerHTML = tasks[i].task;
+        return;
+      }
+    }
+    // jeśli nie znaleziono zadania, wyświetlamy komunikat o błędzie
+    document.getElementById("task").addEventListener("click").innerHTML = "Nie znaleziono zadania dla tej klasy.";
+    console.log("czemu nie działa?");
+  }
+    </script>
 </body>
 </html>
