@@ -7,7 +7,7 @@ html {
 }
 a {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     color: black;
     padding: 1vw 2vw ;
     background-color: #E89B25;
@@ -17,7 +17,8 @@ a {
 a:hover {
     text-decoration: none;
     color: white;
-    padding: 1vw 2vw ;
+    padding: 1vw 2vw;
+    font-size: 3vh;
     background-color: #e68e07;
     border-radius: 50px;
 }
@@ -82,6 +83,7 @@ img {
 #ofertagora {
     font-size: 4vh;
     padding: 6vh;
+    font-weight: 700;
 }
 #ofertadol {
     display: flex;
@@ -103,6 +105,8 @@ img {
 }
 #sekcjaRealizacje {
     height: 100vh;
+    font-weight:700;
+    font-size: 3vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -110,8 +114,10 @@ img {
 
 }
 #sekcjaKontakt {
+  font-weight:700;
+    font-size: 3vh;
     background-color: #5F86A5;
-    height: 50vh;
+    height: 30vh;
     text-align: center;
     font-size: 4vh;
     padding-top: 5vh;
@@ -127,7 +133,10 @@ footer {
     width: 90vh;
     text-align: center;
     font-size: 3vh;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 50px;
+    border: 0.1vh solid black;
+    padding: 4vh;
 
 }
 ::-webkit-scrollbar {
@@ -207,4 +216,18 @@ footer {
 }
 button:active {
     box-shadow: 2px 2px black;
+}
+#podzialkontakt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: justify;
+  font-size: 3vh;
+}
+#reszta {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
 }
