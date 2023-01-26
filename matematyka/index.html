@@ -10,6 +10,40 @@
     </script>
     <script src="styles/chowanie.js" defer>
     </script>
+    <script>
+        var tasks = [
+    { grade: "1", task: "Oblicz pole trójkąta o podstawie 3 i wysokości 4." },
+    { grade: "2", task: "Oblicz iloraz dwóch liczb: 15 i 3." },
+    { grade: "3", task: "Oblicz pole koła o promieniu 5." },
+    { grade: "4", task: "Oblicz iloczyn dwóch liczb: 8 i 6." },
+    { grade: "5", task: "Oblicz pierwiastek trzeciego stopnia z liczby 27." },
+    { grade: "6", task: "Oblicz pochodną funkcji y = x^2 + 3x + 2." },
+    { grade: "7", task: "Oblicz pole prostokąta o bokach 5 i 7." },
+    { grade: "8", task: "Oblicz pochodną funkcji y = 3x^3 + 2x^2 + x + 1." },
+    { grade: "9", task: "Oblicz całkę oznaczoną funkcji y = 2x^2 + 3x + 1 od granicy a = 2 do granicy b = 5." },
+    { grade: "10", task: "Oblicz pochodną funkcji y = x^3 - 2x + 1." },
+    { grade: "11", task: "Oblicz całkę nieoznaczoną funkcji y = x^2 + 2x + 3." },
+    { grade: "12", task: "Oblicz pole trapezu o podstawach 3 i 5 oraz wysokości 4." },
+  ];
+  var a = document.getElementById("nav");
+
+  
+  // funkcja wyświetlająca zadanie
+  function displayTask(grade) {
+  // przeglądamy tablicę z zadaniami i wyświetlamy odpowiednie zadanie
+  for (var i = 0; i < tasks.length; i++) {
+    if (tasks[i].grade == grade) {
+      document.getElementById("task").innerHTML = tasks[i].task;
+      console.log(grade);
+      console.log("siema");
+      return;
+    }
+    // jeśli nie znaleziono zadania, wyświetlamy komunikat o błędzie
+    document.getElementById("task").innerHTML = "Nie znaleziono zadania dla tej klasy.";
+    console.log("czemu nie działa?");
+  }
+}
+    </script>
     <title>Matematyka. To lubię!</title>
 </head>
 <body>
@@ -36,110 +70,110 @@
             <ol>
                 <li tabindex="9999">Klasa 1
                     <ul>
-                        <li><a href="#"">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" onclick="displayTask(1)">Zadanie 1</a></li>
+                        <li><a href="#" id="z2">Zadanie 2</a></li>
+                        <li><a href="#" id="z3">Zadanie 3</a></li>
+                        <li><a href="#" id="z4">Zadanie 4</a></li>
+                        <li><a href="#" id="z5">Zadanie 5</a></li>
                      </ul>
                 </li>
                 <li  tabindex="9999">Klasa 2
                     <ul>
-                        <li><a href="#" onclick="noElo()">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="k2z1">Zadanie 1</a></li>
+                        <li><a href="#" id="k2z2">Zadanie 2</a></li>
+                        <li><a href="#" id="k2z3">Zadanie 3</a></li>
+                        <li><a href="#" id="k2z4">Zadanie 4</a></li>
+                        <li><a href="#" id="k2z5">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Klasa 3
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Klasa 4
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Klasa 5
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Klasa 6
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Klasa 7
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Klasa 8
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Liceum Klasa 1
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Liceum Klasa 2
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Liceum Klasa 3
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
                 <li tabindex="9999">Liceum Klasa 4 
                     <ul>
-                        <li><a href="#">Zadanie 1</a></li>
-                        <li><a href="#">Zadanie 2</a></li>
-                        <li><a href="#">Zadanie 3</a></li>
-                        <li><a href="#">Zadanie 4</a></li>
-                        <li><a href="#">Zadanie 5</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 1</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 2</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 3</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 4</a></li>
+                        <li><a href="#" id="kl1zad1">Zadanie 5</a></li>
                     </ul>
                 </li>
             </ol>
@@ -161,7 +195,7 @@
                 Powodzenia w nauce :)
             </p>
         </div>
-        <div id="task"> Zadanie</div>
+        <div id="task"> Zadanie tu będzie</div>
         </div>
     </section>
     <div class="calc">
@@ -231,39 +265,5 @@
             <div id="pierwiastek-wynik"></div>
         </div>
     </div>
-    <script>
-        var tasks = [
-    { grade: "1", task: "Oblicz pole trójkąta o podstawie 3 i wysokości 4." },
-    { grade: "2", task: "Oblicz iloraz dwóch liczb: 15 i 3." },
-    { grade: "3", task: "Oblicz pole koła o promieniu 5." },
-    { grade: "4", task: "Oblicz iloczyn dwóch liczb: 8 i 6." },
-    { grade: "5", task: "Oblicz pierwiastek trzeciego stopnia z liczby 27." },
-    { grade: "6", task: "Oblicz pochodną funkcji y = x^2 + 3x + 2." },
-    { grade: "7", task: "Oblicz pole prostokąta o bokach 5 i 7." },
-    { grade: "8", task: "Oblicz pochodną funkcji y = 3x^3 + 2x^2 + x + 1." },
-    { grade: "9", task: "Oblicz całkę oznaczoną funkcji y = 2x^2 + 3x + 1 od granicy a = 2 do granicy b = 5." },
-    { grade: "10", task: "Oblicz pochodną funkcji y = x^3 - 2x + 1." },
-    { grade: "11", task: "Oblicz całkę nieoznaczoną funkcji y = x^2 + 2x + 3." },
-    { grade: "12", task: "Oblicz pole trapezu o podstawach 3 i 5 oraz wysokości 4." },
-  ];
-  
-  // funkcja wyświetlająca zadanie
-  document.getElementById("task").addEventListener("click",noElo);
-  function noElo (){
-    document.getElementById("task").innerHTML = "No elo";
-  }
-  function displayTask(grade) {
-    // przeglądamy tablicę z zadaniami i wyświetlamy odpowiednie zadanie
-    for (var i = 0; i < tasks.length; i++) {
-      if (tasks[i].grade == grade) {
-        document.getElementById("task").innerHTML = tasks[i].task;
-        return;
-      }
-    }
-    // jeśli nie znaleziono zadania, wyświetlamy komunikat o błędzie
-    document.getElementById("task").addEventListener("click").innerHTML = "Nie znaleziono zadania dla tej klasy.";
-    console.log("czemu nie działa?");
-  }
-    </script>
 </body>
 </html>

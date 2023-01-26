@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Tasz-Bud - Usługi remontowo-budowlane</title>
+</head>
+<body>
+    <header>
+        <div class="podzial2">
+            <div id="logo">
+                TASZBUD 
+            </div>
+        </div>
+        <div class="podzial2">
+                <nav>
+                    <a href="#sekcjaOnas">O nas</a>
+                    <a href="#sekcjaOferta">Oferta</a>
+                    <a href="#sekcjaRealizacje">Realizacje</a>
+                    <a href="#sekcjaKontakt">Kontakt</a>
+                </nav>
+        </div>
+    </header>
+    <section id="sekcjaOnas">
+        <div id="imgOnas">
+            <img src="" alt="">
+        </div>
+        <div id="oNas">
+            <h1>O nas</h1>
+            <p>
+                Jesteśmy firmą z <b>Taszewa</b> w województwie <b>Kujawsko-Pomorskim</b>. 
+                Mamy <b>ponad 17 letnią historię oraz doświadczenie</b>. Zajmujemy się <b>każdym</b> aspektem budowy, od postawienia pierwszych fundamentów po wykonanie dachu. Wykonanie elewacji budynku oraz wykończenie wnętrz też nie jest nam obce. Wykonywaliśmy również prace dla Lasów Państwowych w Nadleśnictwie Dąbrowa oraz innych okolicznych.
+            </p>
+        </div>
+    </section>
+    <section id="sekcjaOferta">
+        <div id="ofertagora">
+            Oferujemy
+        </div>
+        <div id="ofertadol">
+            <div class="ofertakafelek">
+                <img src="img/domek.svg" alt="dom">
+                <h3>Kompleksowe budowy, przebudowy budynków</h3>
+            </div>
+            <div class="ofertakafelek">
+                <img src="img/modernizacja.svg" alt="">
+                <h3>Prace remontowe, termomodernizacyjne oraz wykończeniowe</h3>
+            </div>
+            <div class="ofertakafelek">
+                <img src="img/brukarstwo.svg" alt="">
+                <h3>Brukarstwo</h3>
+            </div>
+            <div class="ofertakafelek">
+                <img src="img/drewno.svg" alt="">
+                <h3>Budowlaną obróbkę drewna</h3>
+            </div>
+            <div class="ofertakafelek">
+                <img src="img/dachy.svg" alt="">
+                <h3>Konstrukcję dachów</h3>
+            </div>
+
+        </div>
+    </section>
+    <section id="sekcjaRealizacje">
+        <div id="realizacje">
+            <h2>Nasze przykładowe realizacje:</h2>
+        </div>
+        <div id="image-container">
+            <img id="current-image" src="img/dom1.jpeg">
+            <div id="podzial">
+            <button id="prev-button">Poprzednia</button>
+            <button id="next-button">Następna</button>
+            </div>
+          </div>
+    </section>
+    <section id="sekcjaKontakt">
+        <div id="kontakt">      
+            Tu będzie kontakt
+        </div>
+    </section>
+    <footer>
+        Strona stworzona przez Mateusz Ostrowski &copy;
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Start</button>
+    <script>
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+    <script>
+        var imageContainer = document.getElementById("image-container");
+        var currentImage = document.getElementById("current-image");
+        var prevButton = document.getElementById("prev-button");
+        var nextButton = document.getElementById("next-button");
+        var images = ["img/dom1.jpeg", "img/dom2.jpeg", "img/dom3.jpeg"];
+        var currentIndex = 0;
+
+        prevButton.addEventListener("click", function(){
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        currentImage.src = images[currentIndex];
+        });
+
+        nextButton.addEventListener("click", function(){
+        currentIndex = (currentIndex + 1) % images.length;
+            
+        currentImage.src = images[currentIndex];
+        });
+        setInterval(function(){
+    currentIndex = (currentIndex + 1) % images.length;
+    currentImage.src = images[currentIndex];
+}, 4000);
+    </script>
+</body>
+</html>

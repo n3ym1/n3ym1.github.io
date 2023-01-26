@@ -338,3 +338,6 @@ input::placeholder {
     opacity: 0.4;
     text-align: left;
 }
+#task {
+    padding-top: 10vh;
+}
