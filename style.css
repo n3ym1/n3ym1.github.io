@@ -272,3 +272,12 @@ h3 {
   p {
     margin: 2vh;
   }
+  #language {
+    color: #9FC131;
+    position: absolute;
+    top: 11vh;
+    right: 1vh;
+  }
+  #language img {
+    height: 2vh;
+  }
