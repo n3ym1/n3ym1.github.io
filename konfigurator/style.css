@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+}
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+#opcje {
+    width: 70vh;
+}
+#opcje {
+    margin-top: 5vh;
+    height: 70vh;
+    background-color: lightcoral;
+}
+#wybory {
+    margin-top: 5vh;
+    height: 70vh;
+    width: 30vh;
+    background-color: aqua;
+    overflow-y: scroll;
+}
+#podzial {
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: gray;
+}
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
+    height: 7vh;
+    background-color: beige;
+}
+.info.total {
+    justify-content: space-between;
+}
+footer {
+    height: 5vh;
+    background-color: lightgray;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#lista {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.boxWyborObszar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vh;
+    background-color: green;
+    height: 10vh;
+    border: 1px solid black;
+}
+.boxWyborObszar.enabled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    height: 10vh;
+    border: 1px solid black;
+}
+.box {
+    text-align: center;
+    height: 10vh;
+    font-size: 15px;
+}
+p {
+    margin: 0;
+}
+.boxWyborPakiet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vh;
+    background-color: green;
+    height: 10vh;
+    border: 1px solid black;
+}
+.boxWyborPakiet.enabled{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    height: 10vh;
+    border: 1px solid black;
+}
+#pakietWybor {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

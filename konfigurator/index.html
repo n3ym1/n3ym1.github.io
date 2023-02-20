@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="script.js"> </script>
+    <title>Konfigurator</title>
+</head>
+<body>
+    <header>
+        Konfigurator usług
+    </header>
+    <content>
+        <div id="podzial">
+            <div class="wyniki">
+            <div id="opcje">
+                <h1>LISTA USŁUG Z KODAMI</h1>
+                <div class="kodUslugi">Elektryka - 100 </div>
+                <div class="kodUslugi">Konserwacja powierzchni - 101  </div>
+                <div class="kodUslugi">Wykończenie wnętrz - 105</div>
+                <div class="kodUslugi">KOD USŁUGI - 110</div>
+                <div class="kodUslugi">KOD USŁUGI - 125</div>
+                <div class="kodUslugi">KOD USŁUGI - 123</div>
+                <div class="kodUslugi">KOD USŁUGI - 136</div>
+                <div class="kodUslugi">KOD USŁUGI - 140</div>
+                <div class="kodUslugi">KOD USŁUGI - 200</div>
+                <div class="kodUslugi">KOD USŁUGI - 210</div>
+                <div class="kodUslugi">Wykończenie wnętrz materiałami premium - 234</div>
+                <input type="number" id="inputkod"> 
+                <button id="przycisk" onclick="getBaseValue()">Potwierdź kod</button>
+                <div id="lista">
+                  <div class="boxWyborObszar" ><p>Obszar (m2)</p></div>
+                  <div class="boxWyborObszar enabled"><p>20-30</p></div>
+                  <div class="boxWyborObszar enabled"><p>31-50</p></div>
+                  <div class="boxWyborObszar enabled"><p>51-99</p></div>
+                  <div class="boxWyborObszar enabled"><p>100-150</p></div>
+                  <div class="boxWyborObszar enabled"><p>151-300</p></div>
+                  <div class="boxWyborObszar enabled"><p>301-500</p></div>
+                  <div class="boxWyborObszar enabled"><p>501-1000</p></div>
+                </div>
+                <div id="pakietWybor">
+                    <div class="boxWyborPakiet" ><p>Pakiet Usługi</p></div>
+                    <div class="boxWyborPakiet enabled" ><p>Pakiet standard</p></div>
+                    <div class="boxWyborPakiet enabled" ><p>Pakiet standard+</p></div>
+                    <div class="boxWyborPakiet enabled" ><p>Pakiet rozszerzony</p></div>
+                    <div class="boxWyborPakiet enabled" ><p>Pakiet rozszerzony+</p></div>
+                    <div class="boxWyborPakiet enabled" ><p>Pakiet premium</p></div>
+                    <div class="boxWyborPakiet enabled" ><p>Pakiet Złoty dla stałych klientów</p></div>
+                </div>
+            </div>
+            <div class="info">
+                Tu będą wyskakiwać błędy w konfiguracji
+            </div>
+        </div>
+            <div class="wyniki">
+                <div id="wybory">
+                </div>
+                <div class="info total">
+                    <div class="tekst"> Cena: </div>
+                    <div id="total"> wynik działania</div>
+                </div>
+            </div>
+        </div>
+    </content>
+    <footer>Konfigurator stworzony przez Mateusz Ostrowski &copy;</footer>
+    
+</body>
+</html>

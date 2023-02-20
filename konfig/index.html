@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Konfigurator ceny</title>
+  </head>
+  <body>
+    <h2>Konfigurator ceny</h2>
+    <p>Wprowadź kod: <input type="text" id="codeInput"></p>
+    <p>Wybierz rodzaj usługi:
+      <select id="serviceSelect">
+        <option value="1">Usługa 1</option>
+        <option value="2">Usługa 2</option>
+        <option value="3">Usługa 3</option>
+      </select>
+    </p>
+    <p>Podaj metraż: <input type="number" id="areaInput"></p>
+    <p>Elementy dodatkowe: <input type="number" id="additionalItemsInput"></p>
+    <button id="calculateButton">Oblicz cenę</button>
+    <hr>
+    <h3>Wynik:</h3>
+    <p id="result"></p>
+    <script>
+      const calculateButton = document.getElementById("calculateButton");
+      calculateButton.addEventListener("click", function() {
+        const code = document.getElementById("codeInput").value;
+        const service = document.getElementById("serviceSelect").value;
+        const area = document.getElementById("areaInput").value;
+        const additionalItems = document.getElementById("additionalItemsInput").value;
+        
+        let baseRate = 0;
+        let packageFactor = 0;
+        let hours = 0;
+        
+        switch (service) {
+          case "1":
+            baseRate = 100;
+            packageFactor = 1;
+            hours = 10;
+            break;
+          case "2":
+            baseRate = 150;
+            packageFactor = 1.5;
+            hours = 15;
+            break;
+          case "3":
+            baseRate = 200;
+            packageFactor = 2;
+            hours = 20;
+            break;
+        }
+        
+        let price = baseRate * packageFactor * hours;
+        price += Number(additionalItems);
+        
+        const result = document.getElementById("result");
+        result.innerHTML = "Kod: " + code + "<br>";
+        result.innerHTML += "Rodzaj usługi: " + service + "<br>";
+        result.innerHTML += "Metraż: " + area + " m²<br>";
+        result.innerHTML += "Elementy dodatkowe: " + additionalItems + " PLN<br>";
+        result.innerHTML += "Cena: " + price + " PLN";
+      });
+    </script>
+  </body>
+</html>
